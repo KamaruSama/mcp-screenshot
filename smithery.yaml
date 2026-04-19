@@ -1,0 +1,24 @@
+startCommand:
+  type: stdio
+  commandFunction: |-
+    (config) => ({
+      command: "mcp-screenshot",
+      env: {
+        WAYLAND_DISPLAY: config.waylandDisplay,
+        XDG_RUNTIME_DIR: config.xdgRuntimeDir
+      }
+    })
+  configSchema:
+    type: object
+    required: [waylandDisplay, xdgRuntimeDir]
+    properties:
+      waylandDisplay:
+        type: string
+        title: WAYLAND_DISPLAY
+        description: Wayland display id (e.g. wayland-1).
+        default: wayland-1
+      xdgRuntimeDir:
+        type: string
+        title: XDG_RUNTIME_DIR
+        description: Wayland runtime directory (e.g. /run/user/1000).
+        default: /run/user/1000
