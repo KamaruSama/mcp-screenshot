@@ -89,5 +89,10 @@ def list_outputs() -> str:
             return "wlr-randr not found and grim -l failed."
 
 
-if __name__ == "__main__":
+def main():
+    """Entry point for  console script."""
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.KamaruSama/mcp-screenshot",
+  "description": "Take Wayland screenshots via grim/slurp. Full screen, region, or interactive crop.",
+  "repository": {
+    "url": "https://github.com/KamaruSama/mcp-screenshot",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "mcp-screenshot",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Wayland display identifier (e.g. wayland-1). Required for grim to find the compositor.",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": false,
+          "name": "WAYLAND_DISPLAY"
+        },
+        {
+          "description": "Wayland runtime directory (e.g. /run/user/1000). Required for socket lookup.",
+          "isRequired": true,
+          "format": "filepath",
+          "isSecret": false,
+          "name": "XDG_RUNTIME_DIR"
+        }
+      ]
+    }
+  ]
+}
