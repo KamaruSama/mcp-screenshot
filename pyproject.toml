@@ -1,0 +1,21 @@
+[project]
+name = "mcp-screenshot"
+version = "1.0.0"
+description = "MCP server for taking Wayland screenshots via grim/slurp."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Proprietary — © 2026 likezara" }
+authors = [
+    { name = "Kamaru", email = "k.kamarux@gmail.com" },
+]
+maintainers = [
+    { name = "likezara", email = "contact@likezara.com" },
+]
+keywords = ["mcp", "screenshot", "wayland", "grim", "slurp", "likezara"]
+
+[project.urls]
+Funding = "https://ko-fi.com/kamaru"
+"Commercial Inquiries" = "mailto:contact@likezara.com"
+dependencies = [
+    "mcp>=1.27.0",
+]
