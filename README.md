@@ -1,5 +1,7 @@
 # mcp-screenshot
 
+<!-- mcp-name: io.github.KamaruSama/mcp-screenshot -->
+
 **MCP server for taking Linux / Wayland screenshots via `grim` and `slurp`.**
 
 Exposes 2 tools to capture the full screen, a selected region, or an interactive crop — returned inline as base64 or saved to disk.

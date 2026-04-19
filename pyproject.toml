@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mcp-screenshot"
-version = "1.0.0"
+version = "1.0.1"
 description = "MCP server for taking Wayland screenshots via grim/slurp. Part of likezara™ MCP suite."
 readme = "README.md"
 requires-python = ">=3.12"
